@@ -222,3 +222,15 @@ h4 {
 mark {
     font-weight: bold;
 }
+
+/*footer*/
+.main-footer p {
+    color: $color-secondary;
+    font-family: Montserrat-Regular, Arial, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+
+    @media screen and (max-width: 599px) {
+        font-size: 0.8rem;
+    }
+}
