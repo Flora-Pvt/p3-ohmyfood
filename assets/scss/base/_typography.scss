@@ -4,6 +4,41 @@
     src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype');
 }
 
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url('../assets/fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Devonshire-Regular';
+    src: url('../assets/fonts/Devonshire-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CroissantOne-Regular';
+    src: url('../assets/fonts/CroissantOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DMSerifText-Regular';
+    src: url('../assets/fonts/DMSerifText-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Sriracha-Regular';
+    src: url('../assets/fonts/Sriracha-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'DancingScript-VariableFont_wght';
+    src: url('../assets/fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'KaushanScript-Regular';
+    src: url('../assets/fonts/KaushanScript-Regular.ttf') format('truetype');
+}
+
 /*Accueil*/
 h1 {
     font-family: 'Montserrat-Bold', 'Segoe UI Black', 'Arial Rounded MT Bold', sans-serif;
@@ -13,4 +48,177 @@ h1 {
     @media screen and (max-width: 599px) {
         font-size: 3rem;
     }
+}
+
+.menu1 {
+    font-family: 'Devonshire-Regular', Arial, sans-serif;
+    color: $color-menu1-text;
+    font-size: 2rem;
+
+    &--menu {
+        font-family: 'Sriracha-Regular', Arial, sans-serif;
+    }
+}
+
+.menu2 {
+    &--title {
+        font-family: 'CroissantOne-Regular', Arial, sans-serif;
+        @include gradient-text($direction: to right, $color1: $color-menu2-text, $color2: $color-menu2-text2);
+        font-size: 1.5rem;
+    }
+
+    &--menu {
+        font-family: 'DMSerifText-Regular', Arial, sans-serif;
+        color: $color-menu2-text;
+    }
+}
+
+.menu3 {
+    &--title {
+        font-family: 'DancingScript-VariableFont_wght', Arial, sans-serif;
+        @include gradient-text($direction: to right, $color1: $color-menu3-text, $color2: $color-menu3-text2);
+        font-size: 2rem;
+
+        @media screen and (max-width: 599px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &--menu {
+        font-family: 'Segoe Print', Arial, sans-serif;
+        color: $color-menu3-text2;
+    }
+}
+
+.menu4 {
+    &--title {
+        font-family: 'KaushanScript-Regular', Arial, sans-serif;
+        @include gradient-text($direction: to right, $color1: $color-menu4-text, $color2: $color-menu4-text2);
+        font-size: 2rem;
+
+        @media screen and (max-width: 599px) {
+            font-size: 1.5rem;
+        }
+    }
+
+    &--menu {
+        font-family: 'Segoe Print', Arial, sans-serif;
+        color: $color-menu4-text;
+    }
+}
+
+.soon {
+    color: $color-secondary;
+    font-family: Montserrat-Regular, Arial, sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+
+    @media screen and (max-width: 599px) {
+        font-size: 1.2rem;
+    }
+}
+
+/*Menus*/
+h2 {
+    font-size: 2.5rem;
+
+    @media screen and (max-width: 599px) {
+        font-size: 1.5rem;
+    }
+}
+
+.container > h3 {
+    font-family: Montserrat-Bold;
+    font-size: 2rem;
+
+    @media screen and (max-width: 599px) {
+        font-size: 1.3rem;
+    }
+}
+
+.card_heading {
+    font-size: 3rem;
+
+    @media screen and (max-width: 599px) {
+        font-size: 1.3rem;
+    }
+
+    &--menu1 {
+        font-family: 'Devonshire-Regular', Arial, sans-serif;
+        color: $color-menu1-text;
+    }
+
+    &--menu2 {
+        font-family: 'CroissantOne-Regular', Arial, sans-serif;
+        @include gradient-text($direction: to right, $color1: $color-menu2-text, $color2: $color-menu2-text2);
+        font-size: 2rem;
+
+        @media screen and (max-width: 599px) {
+            font-size: 1.1rem;
+        }
+    }
+
+    &--menu3 {
+        font-family: 'DancingScript-VariableFont_wght', Arial, sans-serif;
+        @include gradient-text($direction: to right, $color1: $color-menu3-text, $color2: $color-menu3-text2);
+
+        @media screen and (max-width: 599px) {
+            font-size: 1.2rem;
+        }
+    }
+
+    &--menu4 {
+        font-family: 'KaushanScript-Regular', Arial, sans-serif;
+        @include gradient-text($direction: to right, $color1: $color-menu4-text, $color2: $color-menu4-text2);
+    }
+}
+
+h4 {
+    font-size: 1.2rem;
+
+    @media screen and (max-width: 599px) {
+        font-size: 0.8rem;
+    }
+}
+
+/*Text inside menus*/
+.card_part {
+    font-family: 'Segoe Print', Arial, sans-serif;
+    font-size: 1rem;
+    color: black;
+
+    @media screen and (max-width: 599px) {
+        font-size: 0.6rem;
+    }
+
+    &--entree {
+        color: $color-menu2-text;
+        font-family: Montserrat-Regular, Arial, sans-serif;
+
+        h4 {
+            font-size: 1rem;
+        }
+    }
+
+    &--course {
+        color: $color-menu2-text1;
+        font-family: Montserrat-Regular, Arial, sans-serif;
+
+        h4 {
+            font-size: 1rem;
+        }
+    }
+
+    &--dessert {
+        color: $color-menu2-text2;
+        font-family: Montserrat-Regular, Arial, sans-serif;
+
+        h4 {
+            font-size: 1rem;
+        }
+    }
+}
+
+mark {
+    font-weight: bold;
 }
