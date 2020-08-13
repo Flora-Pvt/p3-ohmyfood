@@ -1,1 +1,15 @@
-﻿
+﻿.main-header {
+    background: $color-primary;
+    height: 175px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 70px;
+
+    @media screen and (max-width: 599px) {
+        height: 100px;
+        margin-bottom: 40px;
+    }
+}

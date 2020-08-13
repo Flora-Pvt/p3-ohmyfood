@@ -1,1 +1,16 @@
-﻿
+﻿/*fonts declaration*/
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url('../assets/fonts/Montserrat-Bold.ttf') format('truetype');
+}
+
+/*Accueil*/
+h1 {
+    font-family: 'Montserrat-Bold', 'Segoe UI Black', 'Arial Rounded MT Bold', sans-serif;
+    font-size: 4rem;
+    color: $color-secondary;
+
+    @media screen and (max-width: 599px) {
+        font-size: 3rem;
+    }
+}
