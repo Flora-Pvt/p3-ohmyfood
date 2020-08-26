@@ -1,24 +1,26 @@
-# Bienvenue sur Oh my food
+# Bienvenue sur Oh My Food 
 
 
-##Qu’est-ce que c’est ? 
+## Qu’est-ce que c’est ? 
+
 Oh my food est un site web présentant quatres menus de grands-chefs français. J'ai réalisé ce site web du début à la fin, entièrement en HTML/CSS, durant l’été 2020, dans le cadre de ma formation de développeur web chez Openclassrooms (OC).
 
-Vous pouvez voir le résultat ici : flora-pvt.github.io/p3-ohmyfood/
+Vous pouvez voir le résultat ici : https://flora-pvt.github.io/p3-ohmyfood/ 
 
 Ce projet maintenant fini a été créé à partir de visuels fournies par OC.
 
     
-##Comment le modifie-t-on ?
+## Comment le modifie-t-on ?
+
 Si vous souhaitez utiliser ce projet et y apporter des modifications il est nécessaire d'installer le préprocesseur Sass.
     
-###Pourquoi Sass ?
+### Pourquoi Sass ?
 
 Sass permet d'alléger notre CSS et le rend plus facile à maintenir.
 Ce préprocesseur permet d'utiliser des fonctionnalités qui n'existent pas encore dans CSS, comme les variables, l'imbrication, les mixins, l'héritage et d'autres bonus astucieux qui rendent l'écriture CSS plus simple à maintenir.
 Il permet de créer plusieurs fichiers .sass ou .scss, de les organiser pour savoir rapidement lequel modifier si besoin d'une correction ou d'un ajout, et de les compiler automatiquement en un fichier .css allégé utilisé par notre site web. 
 
-###Comment utiliser Sass ?
+### Comment utiliser Sass ?
 
 Pour installer et apprendre Sass consultez le site web de Sass qui vous guidera : https://sass-lang.com/ 
 
