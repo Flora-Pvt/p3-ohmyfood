@@ -15,11 +15,6 @@
 }
 
 @font-face {
-    font-family: 'Devonshire-Regular';
-    src: url('../../fonts/Devonshire-Regular.ttf') format('truetype');
-}
-
-@font-face {
     font-family: 'CroissantOne-Regular';
     src: url('../../fonts/CroissantOne-Regular.ttf') format('truetype');
 }
@@ -55,31 +50,39 @@ h1 {
     }
 }
 
-.menu1 {
+.menu_menu {
+    font-size: 2.5rem;
+
+    @media screen and (max-width: 599px) {
+        font-size: 1.5rem;
+    }
+}
+
+.menu--1 {
     font-family: 'Devonshire-Regular', Arial, sans-serif;
     color: $color-menu1-text;
     font-size: 2rem;
 
-    &--menu {
+    &_menu {
         font-family: 'Sriracha-Regular', Arial, sans-serif;
     }
 }
 
-.menu2 {
-    &--title {
+.menu--2 {
+    &_title {
         font-family: 'CroissantOne-Regular', Arial, sans-serif;
         @include gradient-text($direction: to right, $color1: $color-menu2-text, $color2: $color-menu2-text2);
         font-size: 1.5rem;
     }
 
-    &--menu {
+    &_menu {
         font-family: 'DMSerifText-Regular', Arial, sans-serif;
         color: $color-menu2-text;
     }
 }
 
-.menu3 {
-    &--title {
+.menu--3 {
+    &_title {
         font-family: 'DancingScript-VariableFont_wght', Arial, sans-serif;
         @include gradient-text($direction: to right, $color1: $color-menu3-text, $color2: $color-menu3-text2);
         font-size: 2rem;
@@ -89,14 +92,14 @@ h1 {
         }
     }
 
-    &--menu {
+    &_menu {
         font-family: 'Segoe Print', Arial, sans-serif;
         color: $color-menu3-text2;
     }
 }
 
-.menu4 {
-    &--title {
+.menu--4 {
+    &_title {
         font-family: 'KaushanScript-Regular', Arial, sans-serif;
         @include gradient-text($direction: to right, $color1: $color-menu4-text, $color2: $color-menu4-text2);
         font-size: 2rem;
@@ -106,7 +109,7 @@ h1 {
         }
     }
 
-    &--menu {
+    &_menu {
         font-family: 'Segoe Print', Arial, sans-serif;
         color: $color-menu4-text;
     }
@@ -124,15 +127,9 @@ h1 {
 }
 
 /*Menus*/
-h2 {
-    font-size: 2.5rem;
 
-    @media screen and (max-width: 599px) {
-        font-size: 1.5rem;
-    }
-}
-
-.container > h3 {
+.card {
+    &_title {
     font-family: Montserrat-Bold;
     font-size: 2rem;
 
@@ -141,42 +138,44 @@ h2 {
     }
 }
 
-.card_heading {
-    font-size: 3rem;
-
-    @media screen and (max-width: 599px) {
-        font-size: 1.3rem;
-    }
-
-    &--menu1 {
-        font-family: 'Devonshire-Regular', Arial, sans-serif;
-        color: $color-menu1-text;
-    }
-
-    &--menu2 {
-        font-family: 'CroissantOne-Regular', Arial, sans-serif;
-        @include gradient-text($direction: to right, $color1: $color-menu2-text, $color2: $color-menu2-text2);
-        font-size: 2rem;
-
+    &_heading {
+        font-size: 3rem;
+    
         @media screen and (max-width: 599px) {
-            font-size: 1.1rem;
+            font-size: 1.3rem;
         }
-    }
-
-    &--menu3 {
-        font-family: 'DancingScript-VariableFont_wght', Arial, sans-serif;
-        @include gradient-text($direction: to right, $color1: $color-menu3-text, $color2: $color-menu3-text2);
-
-        @media screen and (max-width: 599px) {
-            font-size: 1.2rem;
+    
+        &--menu1 {
+            font-family: 'Devonshire-Regular', Arial, sans-serif;
+            color: $color-menu1-text;
         }
-    }
-
-    &--menu4 {
-        font-family: 'KaushanScript-Regular', Arial, sans-serif;
-        @include gradient-text($direction: to right, $color1: $color-menu4-text, $color2: $color-menu4-text2);
+    
+        &--menu2 {
+            font-family: 'CroissantOne-Regular', Arial, sans-serif;
+            @include gradient-text($direction: to right, $color1: $color-menu2-text, $color2: $color-menu2-text2);
+            font-size: 2rem;
+    
+            @media screen and (max-width: 599px) {
+                font-size: 1.1rem;
+            }
+        }
+    
+        &--menu3 {
+            font-family: 'DancingScript-VariableFont_wght', Arial, sans-serif;
+            @include gradient-text($direction: to right, $color1: $color-menu3-text, $color2: $color-menu3-text2);
+    
+            @media screen and (max-width: 599px) {
+                font-size: 1.2rem;
+            }
+        }
+    
+        &--menu4 {
+            font-family: 'KaushanScript-Regular', Arial, sans-serif;
+            @include gradient-text($direction: to right, $color1: $color-menu4-text, $color2: $color-menu4-text2);
+        }
     }
 }
+
 
 h4 {
     font-size: 1.2rem;
@@ -202,6 +201,9 @@ h4 {
 
         h4 {
             font-size: 1rem;
+            @media screen and (max-width: 599px) {
+                font-size: 0.6rem;
+            }
         }
     }
 
@@ -211,6 +213,9 @@ h4 {
 
         h4 {
             font-size: 1rem;
+            @media screen and (max-width: 599px) {
+                font-size: 0.6rem;
+            }
         }
     }
 
@@ -220,6 +225,9 @@ h4 {
 
         h4 {
             font-size: 1rem;
+            @media screen and (max-width: 599px) {
+                font-size: 0.6rem;
+            }
         }
     }
 }
