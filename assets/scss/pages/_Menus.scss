@@ -1,1 +1,144 @@
-﻿
+﻿.menu--1 {
+    background-color: $color-menu1-bg;
+}
+
+.menu--2 {
+    background-color: $color-menu2-bg;
+}
+
+.menu--3 {
+    background-color: $color-menu3-bg;
+}
+
+.menu--4 {
+    background-color: $color-menu4-bg;
+}
+
+.card_title {
+    height: 70px;
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    height: 1200px;
+    width: 850px;
+    box-shadow: $shadow;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 200px;
+    text-align: center;
+
+    @media screen and (max-width: 599px) {
+        width: 80%;
+        height: 750px;
+        justify-content: flex-start;
+    }
+
+    &_heading {
+        width: 80%;
+        height: 260px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (max-width: 599px) {
+            height: 80px;
+        }
+
+        /*solving cut font title menu 3*/
+        &--menu3 {
+            width: 80%; 
+        }
+
+        img {
+            height: 80px;
+            width: 80px;
+
+            @media screen and (max-width: 599px) {
+                height: 40px;
+                width: 40px;
+            }
+        }
+    }
+
+    &_part {
+        height: 310px;
+        width: 80%;
+
+        &_title {
+            width: 100%;
+            height: 60px;
+            display: flex;
+            justify-content: space-between;
+
+
+            img {
+                margin-top: 10px;
+                width: 33%;
+                height: 15px;
+
+                @media screen and (max-width: 599px) {
+                    width: 25%;
+                    height: 8px;
+                }
+            }
+
+            h4 {
+                height: 28px;
+                @include underline;
+            }
+
+            &--entree {
+                h4 {
+                    @include underline($direction: to top, $under: $color-menu2-text 1px, $top: transparent 3px);
+                    padding-top: 10px;
+
+                    @media screen and (max-width: 599px) {
+                        padding-top: 7px;                        
+                    }
+                }
+            }
+
+            &--course {
+                h4 {
+                    @include underline($direction: to top, $under: $color-menu2-text1 1px, $top: transparent 3px);
+                    padding-top: 10px;
+
+                    @media screen and (max-width: 599px) {
+                        padding-top: 7px;
+                    }
+                }
+            }
+
+            &--dessert {
+                h4 {
+                    @include underline($direction: to top, $under: $color-menu2-text2 1px, $top: transparent 3px);
+                    padding-top: 10px;
+
+                    @media screen and (max-width: 599px) {
+                        padding-top: 7px;
+                    }
+                }
+            }
+        }
+
+        p {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+    }
+
+    &_footer {
+        height: 120px;
+        display: flex;
+
+        @media screen and (max-width: 599px) {
+            display: none;
+        }
+    }
+}

@@ -5,12 +5,103 @@
     <meta charset="utf-8" />
     <link rel="stylesheet" href="assets/css/prefixed/main.css">
     <meta name="viewport" content="width=device-width" />
-    <title></title>
-    <meta name="description" content="" />   
+    <title>Oh my food</title>
+    <meta name="description" content="Accueil du site OhMyFood." />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="OhMyFood, tous les menus">
+    <meta name="twitter:title" content="OhMyFood">
+    <meta name="twitter:description" content="OhMyFood, menus des grands restaurants préparés à l'avance.">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/Flora-Pvt/p3-ohmyfood/master/assets/images/logoOhMyFood.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="OhMyFood, tous les menus" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/Flora-Pvt/p3-ohmyfood" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/Flora-Pvt/p3-ohmyfood/master/assets/images/logoOhMyFood.png" />
+    <meta property="og:description" content="OhMyFood, menus des grands restaurants préparés à l'avance." />
+    <meta property="og:site_name" content="OhMyFood" />
 </head>
 <body>
 
-   
+    <header class="main-header">
+        <a href="index.html" aria-label="lien vers la page d'accueil">
+            <h1>
+                ohmyfood
+            </h1>
+        </a>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="ligne">
+                <a class="menu menu--1" href="pages/note.html">
+                    <div class="menu--zoom">
+                        <img src="assets/images/logo_note.png" alt="note de musique" />
+                        <p>
+                            La note enchantée
+                        </p>
+                        <h2 class="menu_menu menu--1_menu">
+                            MENU
+                        </h2>
+                    </div>
+                </a>
+
+                <a class="menu menu--2" href="pages/chic.html">
+                    <div class="menu--zoom">
+                        <p class="menu--2_title">
+                            Le chic à la française
+                        </p>
+                        <h2 class="menu_menu menu--2_menu">
+                            Menu
+                        </h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="ligne">
+                <a class="menu menu--3" href="pages/delice.html">
+                    <div class="menu--zoom">
+                        <p class="menu--3_title">
+                            Le délice des papilles
+                        </p>
+                        <h2 class="menu_menu menu--3_menu">
+                            Menu
+                        </h2>
+                    </div>
+                </a>
+
+                <a class="menu menu--4" href="pages/palette.html">
+                    <div class="menu--zoom">
+                        <p class="menu--4_title">
+                            La palette du goût
+                        </p>
+                        <h2 class="menu_menu menu--4_menu">
+                            Menu
+                        </h2>
+                    </div>
+                </a>
+            </div>
+
+            <div class="soon">
+                <p>
+                    Prochainement
+                </p>
+                <div class="soon_loader">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                </div>                
+            </div>
+        </section>
+    </main>   
+
+    <footer class="main-footer">        
+        <a class="main-footer_part" href="pages/legal.html" target="_blank">Mentions légales
+        </a>            
+        <a class="main-footer_part" href="mailto:contact@ohmyfood.com">Contactez-nous
+        </a>          
+</footer>  
 
 </body>
 </html>
