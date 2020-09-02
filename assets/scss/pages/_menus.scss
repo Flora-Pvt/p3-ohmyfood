@@ -46,10 +46,11 @@
 
         @media screen and (max-width: 599px) {
             height: 80px;
+            margin: 10px 0;
         }
 
-        /*solving cut font title menu 3*/
-        &--menu3 {
+        /*solving cut font title menu 3 & 4*/
+        &--menu3, &--menu4 {
             width: 80%; 
         }
 
